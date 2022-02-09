@@ -3,5 +3,6 @@ __pycache__
 sample_data.json
 python_bank.json
 sample_db.py
-*.txt
+mgodatagen.txt
+credentials.txt
 /venv
