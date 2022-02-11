@@ -34,6 +34,7 @@ sample_questions = db['sample_questions']
 
 survey = db['survey']
 results = db['results']
+calibration_results = db['calibration_results']
 
 @app.route("/")
 def hello_world():
@@ -81,6 +82,26 @@ def get_results_by_quizId(quizId):
 def get_result_by_resultId(resultId):
     res = results.find_one(ObjectId(resultId))
     return dumps(res)
+
+@app.route("/submit_calibration", methods=['POST'])
+def submit_calibration():
+    body = request.get_json()
+    print(body)
+
+    questions = body['questions']
+    responses = body['answers']
+
+    correct_answers = list(map(lambda x: x['correct'], questions))
+    mapped_responses = list(map(lambda x, y: response_helper(x, y), correct_answers, responses))
+
+    res = {
+        "questions": parseAllIds(body['questions']),
+        "responses": responses,
+        "mapped_responses": mapped_responses
+    }
+
+    inserted = calibration_results.insert_one(res)
+    return str(inserted.inserted_id)
 
 """
 V2: Parameterized DB collection name
