@@ -1,9 +1,5 @@
 .env
 __pycache__
-sample_data.json
-python_bank.json
-sample_20len_data.json
-sample_db.py
-mgodatagen.txt
-credentials.txt
 /venv
+original
+ignore
