@@ -15,8 +15,8 @@ def process_revisions(revisions):
         modified = did_modify(currentSequence)
         lastSelectionEntry = find_last_selection(currentSequence)
         lastSelection = lastSelectionEntry['action']
-        print(lastSelectionEntry)
-        print(type(lastSelectionEntry))
+        #print(lastSelectionEntry)
+        #print(type(lastSelectionEntry))
         if modified:
             lastModificationEntry = currentSequence[len(currentSequence)-1]
             print(lastModificationEntry)
@@ -35,7 +35,7 @@ def process_revisions(revisions):
             "weighted_nc2": weighted_nc2(difficulty) if lastModification == "MODIFY_CORRECT" else 0
         }
 
-        print(assessment)
+        #print(assessment)
         indiv_qn_assessments.append(assessment)
     
     metric = {
@@ -45,7 +45,7 @@ def process_revisions(revisions):
         "total_weighted_nc2": sum(list(map(lambda x: x['weighted_nc2'], indiv_qn_assessments) ))
     }
 
-    print(metric)
+    #print(metric)
 
     return metric
 

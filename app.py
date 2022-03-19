@@ -34,11 +34,12 @@ sample_questions = db['sample_questions']
 
 survey = db['survey']
 results = db['results']
+calibration_session_db = db['calibration_session']
 calibration_results = db['calibration_results']
 
 @app.route("/")
 def hello_world():
-  return "Hello, World!"
+  return "CurATe API"
 
 @app.route("/get_calibration_questions", methods=['GET'])
 def get_calibration_questions():
@@ -83,10 +84,47 @@ def get_result_by_resultId(resultId):
     res = results.find_one(ObjectId(resultId))
     return dumps(res)
 
+@app.route("/calibration_session/<sessionId>", methods=['GET'])
+def get_calibration_session(sessionId):
+    res = calibration_session_db.find_one( {'sessionId': sessionId})
+
+    return dumps(res)
+
+@app.route("/calibration_session", methods=['GET', 'POST', 'PUT'])
+def calibration_session():
+    body = request.get_json()
+    #print(body)
+    if request.method == 'POST':
+
+        sessionData = {
+            "sessionId": body['sessionId'],
+            "questions": parseAllIds(body['questions']),
+            "responses": body['answers'],
+            "submitted": False,
+            "datetime": datetime.now().strftime("%d %B %Y, %H:%M:%S")
+        }
+
+        inserted = calibration_session_db.insert_one(sessionData)
+        return str(inserted.inserted_id)
+
+    elif request.method == 'PUT':
+        sessionId = body['sessionId']
+        updatedResponses = body['answers']
+        #print(updatedResponses)
+        result = calibration_session_db.update_one( {"sessionId": sessionId}, {'$set': { "responses": updatedResponses} } )
+        return str(result.matched_count)
+
+    elif request.method == 'GET':
+        res = calibration_session_db.find()
+        return dumps(list(res))
+
 @app.route("/submit_calibration", methods=['POST'])
 def submit_calibration():
     body = request.get_json()
-    print(body)
+    #print(body)
+
+    sessionId = body['sessionId']
+    result = calibration_session_db.update_one( {"sessionId": sessionId}, {'$set': { "submitted": True} } )
 
     questions = body['questions']
     responses = body['answers']
@@ -97,7 +135,8 @@ def submit_calibration():
     res = {
         "questions": parseAllIds(body['questions']),
         "responses": responses,
-        "mapped_responses": mapped_responses
+        "mapped_responses": mapped_responses,
+        "datetime": datetime.now().strftime("%d %B %Y, %H:%M:%S")
     }
 
     inserted = calibration_results.insert_one(res)
@@ -125,7 +164,7 @@ def get_questions_by_id(collectionId):
     currentQuestions = body['questions']
     currentResponses = body['responses']
 
-    print(group)
+    #print(group)
     # Selecting estimator
     if group == "STD":
         estimator = standard_estimator
@@ -213,8 +252,8 @@ def get_survey_questions():
 @app.route("/submit_adaptive_quiz", methods=['POST'])
 def submit_adaptive_quiz():
     body = request.get_json()
-    print("body:")
-    print(body)
+    #print("body:")
+    #print(body)
 
     data = body['data']
     quiz_data = body['quizData']
@@ -226,16 +265,16 @@ def submit_adaptive_quiz():
 
     group = data['quiz']['estimator']
     questions = quiz_data['questions']
-    print("questions:")
-    print(questions)
+    #rint("questions:")
+    #print(questions)
     responses = quiz_data['responses']
     logs = quiz_data['logs']
-    print("logs:")
-    print(logs)
+    #print("logs:")
+    #print(logs)
 
     revisions = quiz_data['revisions']
-    print("revisions:")
-    print(revisions)
+    #print("revisions:")
+    #print(revisions)
 
     if group == "STD":
         estimator = standard_estimator
@@ -310,8 +349,8 @@ def incrementQuestionStats(quizId, questions, mapped_responses):
 @app.route("/submit_quiz", methods=['POST'])
 def submit_quiz():
     body = request.get_json()
-    print("body:")
-    print(body)
+    #print("body:")
+    #print(body)
 
     data = body['data']
     quiz_data = body['quizData']
@@ -355,8 +394,8 @@ def submit_quiz():
             "likert_score": sum(survey_data['answers'])
         }
     }
-    print("res:")
-    print(res)
+    #print("res:")
+    #print(res)
 
     #TODO: persist into mongoDB
     return res
@@ -365,26 +404,26 @@ def getQuestionByIdEstimate(collectionId, currentQuestions, currentEstimate):
 
     collection = db[collectionId]
     all_qns = list(collection.find())
-    print("\n\n\n*********************** all_qns: " + str(len(all_qns)))
-    print(all_qns[0:3])
+    #print("\n\n\n*********************** all_qns: " + str(len(all_qns)))
+    #print(all_qns[0:3])
     
-    print("\n\n\n*********************** currentQuestions: " + str(len(currentQuestions)))
-    print(currentQuestions)
+    #print("\n\n\n*********************** currentQuestions: " + str(len(currentQuestions)))
+    #print(currentQuestions)
 
     currentEstimate = float(currentEstimate)
-    print("pre clone db")
+    #print("pre clone db")
 
     # Clone DB & remove used indices
     qn_pool = [x for x in all_qns if x not in currentQuestions]
-    print("*********************** qn_pool: " + str(len(qn_pool)))
-    print(qn_pool[0:3])
+    #print("*********************** qn_pool: " + str(len(qn_pool)))
+    #print(qn_pool[0:3])
 
-    print("post clone db")
-    print(type(qn_pool))
+    #print("post clone db")
+    #print(type(qn_pool))
 
     # Clone question into difficulty
     difficulty_pool = list(map(lambda x:x['difficulty'], qn_pool))
-    print("post map difficulty")
+    #print("post map difficulty")
 
     # Perform binary search
     lo = 0
@@ -405,10 +444,10 @@ def getQuestionByIdEstimate(collectionId, currentQuestions, currentEstimate):
     return nextQn
 
 def getRandomQuestionById(collectionId, currentQuestions):
-    print("getRandQnById")
+    #print("getRandQnById")
     collection = db[collectionId]
     all_qns = list(collection.find())
-    print(len(all_qns))
+    #print(len(all_qns))
     qn_pool = [x for x in all_qns if x not in currentQuestions]
 
     random_index = random.randint(0,len(qn_pool)-1)
@@ -478,8 +517,8 @@ def parseQuestions(question):
     oid = question['_id']['$oid']
     question['_id'] = ObjectId(oid)
 
-    print("parsed:")
-    print(question)
+    #print("parsed:")
+    #print(question)
     return question
 
 def response_helper(x, y):
