@@ -136,6 +136,7 @@ def submit_calibration():
         "questions": parseAllIds(body['questions']),
         "responses": responses,
         "mapped_responses": mapped_responses,
+        "score": sum(mapped_responses),
         "datetime": datetime.now().strftime("%d %B %Y, %H:%M:%S")
     }
 
