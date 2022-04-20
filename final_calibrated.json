@@ -1,0 +1,1554 @@
+[
+    {
+        "question": "Is Python case sensitive when dealing with identifiers?",
+        "options": [
+            "yes",
+            "no",
+            "machine dependent",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Case is always significant.",
+        "correct": 1,
+        "difficulty": -2.98293892472583,
+        "index": 1
+    },
+    {
+        "question": "Which one of these is floor division?",
+        "options": [
+            "/",
+            "//",
+            "%",
+            "None of the mentioned"
+        ],
+        "explanation": "Explanation: When both of the operands are integer then python chops out the fraction part and gives you the round off value, to get the accurate answer use floor division. This is floor division. For ex, 5/2 = 2.5 but both of the operands are integer so answer of this expression in python is 2. To get the 2.5 answer, use floor division.",
+        "correct": 2,
+        "difficulty": -2.8090562273680546,
+        "index": 2
+    },
+    {
+        "question": "Which of the following is invalid?",
+        "options": [
+            "float('inf')",
+            "float('nan')",
+            "float('56'+'78')",
+            "float('12+34')"
+        ],
+        "explanation": "Explanation: '+' cannot be converted to a float.",
+        "correct": 4,
+        "difficulty": -2.7898326261570547,
+        "index": 3
+    },
+    {
+        "question": "Suppose list1 is [1, 5, 9], what is sum(list1)?",
+        "options": [
+            "1",
+            "9",
+            "15",
+            "Error"
+        ],
+        "explanation": "Explanation: Sum returns the sum of all elements in the list.",
+        "correct": 3,
+        "difficulty": -2.7545602329194487,
+        "index": 4
+    },
+    {
+        "question": "Suppose t = (1, 2, 4, 3), which of the following is incorrect?",
+        "options": [
+            "print(t[3])",
+            "t[3] = 45",
+            "print(max(t))",
+            "print(len(t))"
+        ],
+        "explanation": "Explanation: Values cannot be modified in the case of tuple, that is, tuple is immutable.",
+        "correct": 2,
+        "difficulty": -2.7110326132925433,
+        "index": 5
+    },
+    {
+        "question": "What is a variable defined outside a function referred to as?",
+        "options": [
+            "A static variable",
+            "A global variable",
+            "A local variable",
+            "An automatic variable"
+        ],
+        "explanation": "Explanation: The value of a variable defined outside all function definitions is referred to as a global variable and can be used by multiple functions of the program.",
+        "correct": 2,
+        "difficulty": -2.7096043321712466,
+        "index": 6
+    },
+    {
+        "question": "What will be the output of print(math.factorial(4.5))?",
+        "options": [
+            "24",
+            "120",
+            "error",
+            "24.0"
+        ],
+        "explanation": "Explanation: Factorial is only defined for non-negative integers.",
+        "correct": 3,
+        "difficulty": -2.6528781916616957,
+        "index": 7
+    },
+    {
+        "question": "What is returned by math.isfinite(float('inf'))?",
+        "options": [
+            "True",
+            "False",
+            "None",
+            "error"
+        ],
+        "explanation": "Explanation: float('inf') is not a finite number.",
+        "correct": 2,
+        "difficulty": -2.6194790523250084,
+        "index": 8
+    },
+    {
+        "question": "What does math.sqrt(X, Y) do?",
+        "options": [
+            "calculate the Xth root of Y",
+            "calculate the Yth root of X",
+            "error",
+            "return a tuple with the square root of X and Y"
+        ],
+        "explanation": "Explanation: The function takes only one argument.",
+        "correct": 3,
+        "difficulty": -2.5506166146396376,
+        "index": 9
+    },
+    {
+        "question": "Which of these in not a core data type?",
+        "options": [
+            "Lists",
+            "Dictionary",
+            "Tuples",
+            "Class"
+        ],
+        "explanation": "Explanation: Class is a user defined data type.",
+        "correct": 4,
+        "difficulty": -2.5439529803199767,
+        "index": 10
+    },
+    {
+        "question": "What is 'Hello'.replace('l', 'e')?",
+        "options": [
+            "Heeeo",
+            "Heelo",
+            "Heleo",
+            "None"
+        ],
+        "explanation": "Explanation: Execute in shell to verify.",
+        "correct": 1,
+        "difficulty": -2.5119415260863587,
+        "index": 11
+    },
+    {
+        "question": "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()?",
+        "options": [
+            "[3, 4, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 3, 4, 5, 5, 20, 25]",
+            "[25, 20, 5, 5, 4, 3, 3, 1]",
+            "[3, 1, 25, 5, 20, 5, 4, 3]"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify.",
+        "correct": 4,
+        "difficulty": -2.390136717173616,
+        "index": 12
+    },
+    {
+        "question": "What are the two main types of functions?",
+        "options": [
+            "Custom function",
+            "Built-in function & User defined function",
+            "User function",
+            "System function"
+        ],
+        "explanation": "Explanation: Built-in functions and user defined ones. The built-in functions are part of the Python language. Examples are: dir(), len() or abs(). The user defined functions are functions created with the def keyword.",
+        "correct": 2,
+        "difficulty": -2.361522098318993,
+        "index": 13
+    },
+    {
+        "question": "What is a variable defined inside a function referred to as?",
+        "options": [
+            "A global variable",
+            "A volatile variable",
+            "A local variable",
+            "An automatic variable"
+        ],
+        "explanation": "Explanation: The variable inside a function is called as local variable and the variable definition is confined only to that function.",
+        "correct": 3,
+        "difficulty": -2.2557362834428485,
+        "index": 14
+    },
+    {
+        "question": "Suppose i is 5 and j is 4, i + j is same as ________",
+        "options": [
+            "i.__add(j)",
+            "i.__add__(j)",
+            "i.__Add(j)",
+            "i.__ADD(j)"
+        ],
+        "explanation": "Explanation: Execute in shell to verify.",
+        "correct": 2,
+        "difficulty": -2.2448271553832724,
+        "index": 15
+    },
+    {
+        "question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()?",
+        "options": [
+            "[3, 4, 5, 20, 5, 25, 1]",
+            "[1, 3, 3, 4, 5, 5, 20, 25]",
+            "[3, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 4, 5, 20, 5, 25]"
+        ],
+        "explanation": "Explanation: pop() by default will remove the last element.",
+        "correct": 1,
+        "difficulty": -2.1989186368568516,
+        "index": 16
+    },
+    {
+        "question": "Which of the following is not a declaration of the dictionary?",
+        "options": [
+            "{1: 'A', 2: 'B'}",
+            "dict([[1,'A'],[2,'B']])",
+            "{1,'A',2'B'}",
+            "{ }"
+        ],
+        "explanation": "Explanation: Option c is a set, not a dictionary.",
+        "correct": 3,
+        "difficulty": -2.156217830648891,
+        "index": 17
+    },
+    {
+        "question": "Which of the following is an invalid variable?",
+        "options": [
+            "my_string_1",
+            "1st_string",
+            "foo",
+            "_"
+        ],
+        "explanation": "Explanation: Variable names should not start with a number.",
+        "correct": 2,
+        "difficulty": -2.1548653823831434,
+        "index": 18
+    },
+    {
+        "question": "Given a function that does not return any value, What value is thrown by default when executed in shell.",
+        "options": [
+            "int",
+            "bool",
+            "void",
+            "None"
+        ],
+        "explanation": "Explanation: Python shell throws a NoneType object back.",
+        "correct": 4,
+        "difficulty": -2.0791090825918266,
+        "index": 19
+    },
+    {
+        "question": "What does ~4 evaluate to?",
+        "options": [
+            "-5",
+            "-4",
+            "-3",
+            "+3"
+        ],
+        "explanation": "Explanation: ~x is equivalent to -(x+1).",
+        "correct": 1,
+        "difficulty": -2.0601597199618125,
+        "index": 20
+    },
+    {
+        "question": "What is the output when we execute list('hello')?",
+        "options": [
+            "['h', 'e', 'l', 'l', 'o']",
+            "['hello']",
+            "['llo']",
+            "['olleh']"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify.",
+        "correct": 1,
+        "difficulty": -2.0345587273342667,
+        "index": 21
+    },
+    {
+        "question": "Which type of elements are accepted by random.shuffle()?",
+        "options": [
+            "strings",
+            "lists",
+            "tuples",
+            "integers"
+        ],
+        "explanation": "Explanation: Strings and tuples are immutable and an integer has no len().",
+        "correct": 2,
+        "difficulty": -1.944832344490405,
+        "index": 22
+    },
+    {
+        "question": "The character Dot (that is, '.') in the default mode, matches any character other than _____________",
+        "options": [
+            "caret",
+            "ampersand",
+            "percentage symbol",
+            "newline"
+        ],
+        "explanation": "Explanation: The character Dot (that is, ',') in the default mode, matches any character other than newline. If DOTALL flag is used, then it matches any character other than newline.",
+        "correct": 4,
+        "difficulty": -1.9225956319135429,
+        "index": 23
+    },
+    {
+        "question": "Is it possible to create a text file in python?",
+        "options": [
+            "Yes",
+            "No",
+            "Machine dependent",
+            "All of the mentioned"
+        ],
+        "explanation": "Explanation: Yes we can create a file in python. Creation of file is as shown below.\nfile = open('newfile.txt', 'w')\nfile.write('hello world in the new file\\n')\nfile.write('and another line\\n')\nfile.close().",
+        "correct": 1,
+        "difficulty": -1.8926707176476079,
+        "index": 24
+    },
+    {
+        "question": "What is the output of this expression, 3*1**3?",
+        "options": [
+            "27",
+            "9",
+            "3",
+            "1"
+        ],
+        "explanation": "Explanation: First this expression will solve 1**3 because exponential has higher precedence than multiplication, so 1**3 = 1 and 3*1 = 3. Final answer is 3.",
+        "correct": 3,
+        "difficulty": -1.8309261839767403,
+        "index": 25
+    },
+    {
+        "question": "What is the result of math.trunc(3.1)?",
+        "options": [
+            "3.0",
+            "3",
+            "0.1",
+            "1"
+        ],
+        "explanation": "Explanation: The integral part of the floating point number is returned.",
+        "correct": 2,
+        "difficulty": -1.7938220981123936,
+        "index": 26
+    },
+    {
+        "question": "What is the output of print(math.trunc('3.1'))?",
+        "options": [
+            "3",
+            "3.0",
+            "error",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: TypeError, a string does not have __trunc__ method.",
+        "correct": 3,
+        "difficulty": -1.7874217675892468,
+        "index": 27
+    },
+    {
+        "question": "_____ represents an entity in the real world with its identity and behaviour.",
+        "options": [
+            "A method",
+            "An object",
+            "A class",
+            "An operator"
+        ],
+        "explanation": "Explanation: An object represents an entity in the real world that can be distinctly identified. A class may define an object.",
+        "correct": 2,
+        "difficulty": -1.7480809253711629,
+        "index": 28
+    },
+    {
+        "question": "All keywords in Python are in _________",
+        "options": [
+            "lower case",
+            "UPPER CASE",
+            "Capitalized",
+            "None of the mentioned"
+        ],
+        "explanation": "Explanation: True, False and None are capitalized while the others are in lower case.",
+        "correct": 4,
+        "difficulty": -1.6858085525601276,
+        "index": 29
+    },
+    {
+        "question": "Which is the correct operator for power(xy)?",
+        "options": [
+            "X^y",
+            "X**y",
+            "X^^y",
+            "None of the mentioned"
+        ],
+        "explanation": "Explanation: In python, power operator is x**y i.e. 2**3=8.",
+        "correct": 2,
+        "difficulty": -1.5835412354426053,
+        "index": 30
+    },
+    {
+        "question": "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "explanation": "Explanation: Although the presence of parenthesis does affect the order of precedence, in the case shown above, it is not making a difference. The result of both of these expressions is 1.333333333. Hence the statement is true.",
+        "correct": 1,
+        "difficulty": -1.5538257090780352,
+        "index": 31
+    },
+    {
+        "question": "Which of the following aren't defined in the math module?",
+        "options": [
+            "log2()",
+            "log10()",
+            "logx()",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: log2() and log10() are defined in the math module.",
+        "correct": 3,
+        "difficulty": -1.548958061759898,
+        "index": 32
+    },
+    {
+        "question": "Which of the following functions can be used to read data from a file using a file descriptor?",
+        "options": [
+            "os.reader()",
+            "os.read()",
+            "os.quick_read()",
+            "os.scan()"
+        ],
+        "explanation": "Explanation: None of the other functions exist.",
+        "correct": 2,
+        "difficulty": -1.504170618007601,
+        "index": 33
+    },
+    {
+        "question": "Which of the following returns a string that represents the present working directory?",
+        "options": [
+            "os.getcwd()",
+            "os.cwd()",
+            "os.getpwd()",
+            "os.pwd()"
+        ],
+        "explanation": "Explanation: The function getcwd() (get current working directory) returns a string that represents the present working directory.",
+        "correct": 1,
+        "difficulty": -1.4740835829608214,
+        "index": 34
+    },
+    {
+        "question": "To read two characters from a file object infile, we use ____________",
+        "options": [
+            "infile.read(2)",
+            "infile.read()",
+            "infile.readline()",
+            "infile.readlines()"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify.",
+        "correct": 1,
+        "difficulty": -1.3952437897109076,
+        "index": 35
+    },
+    {
+        "question": "In file handling, what does this terms means 'r, a'?",
+        "options": [
+            "read, append",
+            "append, read",
+            "write, append",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: r- reading,  a-appending.",
+        "correct": 1,
+        "difficulty": -1.3138071329299232,
+        "index": 36
+    },
+    {
+        "question": "How do you change the file position to an offset value from the start?",
+        "options": [
+            "fp.seek(offset, 0)",
+            "fp.seek(offset, 1)",
+            "fp.seek(offset, 2)",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: 0 indicates that the offset is with respect to the start.",
+        "correct": 1,
+        "difficulty": -1.292467063726126,
+        "index": 37
+    },
+    {
+        "question": "Which of the following is the most suitable definition for encapsulation?",
+        "options": [
+            "Ability of a class to derive members of another class as a part of its own definition",
+            "Means of bundling instance variables and methods in order to restrict access to certain class members",
+            "Focuses on variables and passing of variables to functions",
+            "Allows for implementation of elegant software that is well designed and easily modified"
+        ],
+        "explanation": "Explanation: The values assigned by the constructor to the class members is used to create the object.",
+        "correct": 2,
+        "difficulty": -1.2414801903624935,
+        "index": 38
+    },
+    {
+        "question": "What is returned by math.ceil(3.4)?",
+        "options": [
+            "3",
+            "4",
+            "4.0",
+            "3.0"
+        ],
+        "explanation": "Explanation: The ceil function returns the smallest integer that is bigger than or equal to the number itself.",
+        "correct": 2,
+        "difficulty": -1.2215222433809392,
+        "index": 39
+    },
+    {
+        "question": "Which of the following will not be returned by random.choice('1 ,')?",
+        "options": [
+            "1",
+            "(space)",
+            ",",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Any of the characters present in the string may be returned.",
+        "correct": 4,
+        "difficulty": -1.202272993585756,
+        "index": 40
+    },
+    {
+        "question": "Which is/are the basic I/O connections in file?",
+        "options": [
+            "Standard Input",
+            "Standard Output",
+            "Standard Errors",
+            "All of the mentioned"
+        ],
+        "explanation": "Explanation: Standard input, standard output and standard error. Standard input is the data that goes to the program. The standard input comes from a keyboard. Standard output is where we print our data with the print keyword. Unless redirected, it is the terminal console. The standard error is a stream where programs write their error messages. It is usually the text terminal.",
+        "correct": 4,
+        "difficulty": -1.1561386909895774,
+        "index": 41
+    },
+    {
+        "question": "Which of the following is not a class method?",
+        "options": [
+            "Non-static",
+            "Static",
+            "Bounded",
+            "Unbounded"
+        ],
+        "explanation": "Explanation: The three different class methods in Python are static, bounded and unbounded methods.",
+        "correct": 1,
+        "difficulty": -1.1039199678404095,
+        "index": 42
+    },
+    {
+        "question": "It is not possible for the two's complement value to be equal to the original value in any case.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "explanation": "Explanation: In most cases the value of two's complement is different from the original value. However, there are cases in which the two's complement value may be equal to the original value. For example, the two's complement of 10000000 is also equal to 10000000. Hence the statement is false.",
+        "correct": 2,
+        "difficulty": -1.0923975694089352,
+        "index": 43
+    },
+    {
+        "question": "Suppose list1 is [3, 5, 25, 1, 3], what is min(list1)?",
+        "options": [
+            "3",
+            "5",
+            "25",
+            "1"
+        ],
+        "explanation": "Explanation: Min returns the minimum element in the list.",
+        "correct": 4,
+        "difficulty": -0.882795695877264,
+        "index": 44
+    },
+    {
+        "question": "Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing operation?",
+        "options": [
+            "print(list1[0])",
+            "print(list1[:2])",
+            "print(list1[:-2])",
+            "all of the mentioned"
+        ],
+        "explanation": "Explanation: Slicing is allowed in lists just as in the case of strings.",
+        "correct": 4,
+        "difficulty": -0.830188552606149,
+        "index": 45
+    },
+    {
+        "question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5])?",
+        "options": [
+            "[3, 4, 5, 20, 5, 25, 1, 3, 34, 5]",
+            "[1, 3, 3, 4, 5, 5, 20, 25, 34, 5]",
+            "[25, 20, 5, 5, 4, 3, 3, 1, 34, 5]",
+            "[1, 3, 4, 5, 20, 5, 25, 3, 34, 5]"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify.",
+        "correct": 1,
+        "difficulty": -0.7301456793695627,
+        "index": 46
+    },
+    {
+        "question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)?",
+        "options": [
+            "[3, 4, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 3, 4, 5, 5, 20, 25]",
+            "[3, 5, 20, 5, 25, 1, 3]",
+            "[1, 3, 4, 5, 20, 5, 25]"
+        ],
+        "explanation": "Explanation: pop() removes the element at the position specified in the parameter.",
+        "correct": 3,
+        "difficulty": -0.7156396455051608,
+        "index": 47
+    },
+    {
+        "question": "What is the value returned by math.fact(6)?",
+        "options": [
+            "720",
+            "6",
+            "[1, 2, 3, 6]",
+            "error"
+        ],
+        "explanation": "Explanation: NameError, fact() is not defined.",
+        "correct": 4,
+        "difficulty": -0.7004017855147948,
+        "index": 48
+    },
+    {
+        "question": "The process of pickling in Python includes:",
+        "options": [
+            "conversion of a list into a datatable",
+            "conversion of a byte stream into Python object hierarchy",
+            "conversion of a Python object hierarchy into byte stream",
+            "conversion of a datatable into a list"
+        ],
+        "explanation": "Explanation: Pickling is the process of sterilizing a Python object, that is, conversion of a byte stream into Python object hierarchy. The reverse of this process is known as unpickling.",
+        "correct": 3,
+        "difficulty": -0.64355439651463,
+        "index": 49
+    },
+    {
+        "question": "The expression a{5} will match _____________ characters with the previous regular expression.",
+        "options": [
+            "5 or less",
+            "exactly 5",
+            "5 or more",
+            "exactly 4"
+        ],
+        "explanation": "Explanation: The character {m} is used to match exactly m characters to the previous regular expression. Hence the expression a{5} will match exactly 5 characters and not less than that.",
+        "correct": 2,
+        "difficulty": -0.6078283569836493,
+        "index": 50
+    },
+    {
+        "question": "Which of the following best describes inheritance?",
+        "options": [
+            "Ability of a class to derive members of another class as a part of its own definition",
+            "Means of bundling instance variables and methods in order to restrict access to certain class members",
+            "Focuses on variables and passing of variables to functions",
+            "Allows for implementation of elegant software that is well designed and easily modified"
+        ],
+        "explanation": "Explanation: If the class definition is class B(A): then class B inherits the methods of class A. This is called inheritance.",
+        "correct": 1,
+        "difficulty": -0.5091087165722046,
+        "index": 51
+    },
+    {
+        "question": "Suppose listExample is ['h','e','l','l','o'], what is len(listExample)?",
+        "options": [
+            "5",
+            "4",
+            "None",
+            "Error"
+        ],
+        "explanation": "Explanation: Execute in the shell and verify.",
+        "correct": 1,
+        "difficulty": -0.46640661911159764,
+        "index": 52
+    },
+    {
+        "question": "Suppose list1 is [2445,133,12454,123], what is max(list1)?",
+        "options": [
+            "2445",
+            "133",
+            "12454",
+            "123"
+        ],
+        "explanation": "Explanation: Max returns the maximum element in the list.",
+        "correct": 3,
+        "difficulty": -0.33890315878131316,
+        "index": 53
+    },
+    {
+        "question": "What is the value of x if x = math.sqrt(4)?",
+        "options": [
+            "2",
+            "2.0",
+            "(2, -2)",
+            "(2.0, -2.0)"
+        ],
+        "explanation": "Explanation: The function returns one floating point number.",
+        "correct": 2,
+        "difficulty": -0.31940513668616166,
+        "index": 54
+    },
+    {
+        "question": "________ matches the start of the string. \"________ matches the end of the string.\"",
+        "options": [
+            "'^', '$'",
+            "'$', '^'",
+            "'$', '?'",
+            "'?', '^'"
+        ],
+        "explanation": "Explanation: '^' (carat) matches the start of the string.\n             '$' (dollar sign) matches the end of the string.",
+        "correct": 1,
+        "difficulty": -0.22974950040898445,
+        "index": 55
+    },
+    {
+        "question": "How do you rename a file?",
+        "options": [
+            "fp.name = 'new_name.txt'",
+            "os.rename(existing_name, new_name)",
+            "os.rename(fp, new_name)",
+            "os.set_name(existing_name, new_name)"
+        ],
+        "explanation": "Explanation: os.rename() is used to rename files.",
+        "correct": 2,
+        "difficulty": -0.2049160287640488,
+        "index": 56
+    },
+    {
+        "question": "When will the else part of try-except-else be executed?",
+        "options": [
+            "always",
+            "when an exception occurs",
+            "when no exception occurs",
+            "when an exception occurs in to except block"
+        ],
+        "explanation": "Explanation: The else part is executed when no exception occurs.",
+        "correct": 3,
+        "difficulty": -0.15865645701938647,
+        "index": 57
+    },
+    {
+        "question": "What is the maximum possible length of an identifier?",
+        "options": [
+            "31 characters",
+            "63 characters",
+            "79 characters",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Identifiers can be of any length.",
+        "correct": 4,
+        "difficulty": -0.15486563911213835,
+        "index": 58
+    },
+    {
+        "question": "Which of the following cannot be a variable?",
+        "options": [
+            "__init__",
+            "in",
+            "it",
+            "on"
+        ],
+        "explanation": "Explanation: in is a keyword.",
+        "correct": 2,
+        "difficulty": -0.11158769038535077,
+        "index": 59
+    },
+    {
+        "question": "How many except statements can a try-except block have?",
+        "options": [
+            "zero",
+            "one",
+            "more than one",
+            "more than zero"
+        ],
+        "explanation": "Explanation: There has to be at least one except statement.",
+        "correct": 4,
+        "difficulty": 0.030794928559940704,
+        "index": 60
+    },
+    {
+        "question": "Which of the following is not a keyword?",
+        "options": [
+            "eval",
+            "assert",
+            "nonlocal",
+            "pass"
+        ],
+        "explanation": "Explanation: eval can be used as a variable.",
+        "correct": 1,
+        "difficulty": 0.059920569701508164,
+        "index": 61
+    },
+    {
+        "question": "______ is a string literal denoted by triple quotes for providing the specifications of certain program elements.",
+        "options": [
+            "Interface",
+            "Modularity",
+            "Client",
+            "Docstring"
+        ],
+        "explanation": "Explanation: Docstring used for providing the specifications of program elements.",
+        "correct": 4,
+        "difficulty": 0.061059567276934956,
+        "index": 62
+    },
+    {
+        "question": "What is x if x = math.isfinite(float('0.0'))?",
+        "options": [
+            "True",
+            "False",
+            "None",
+            "error"
+        ],
+        "explanation": "Explanation: float('0.0') is a finite number.",
+        "correct": 1,
+        "difficulty": 0.06679759710624866,
+        "index": 63
+    },
+    {
+        "question": "Which of the following functions returns a dictionary mapping group names to group numbers?",
+        "options": [
+            "re.compile.group",
+            "re.compile.groupindex",
+            "re.compile.index",
+            "re.compile.indexgroup"
+        ],
+        "explanation": "Explanation: The function re.compile.groupindex returns a dictionary mapping group names to group numbers.",
+        "correct": 2,
+        "difficulty": 0.07477471699139393,
+        "index": 64
+    },
+    {
+        "question": "How do you get the current position within the file?",
+        "options": [
+            "fp.seek()",
+            "fp.tell()",
+            "fp.loc",
+            "fp.pos"
+        ],
+        "explanation": "Explanation: It gives the current position as an offset from the start of file.",
+        "correct": 2,
+        "difficulty": 0.10247944257529218,
+        "index": 65
+    },
+    {
+        "question": "What is the biggest reason for the use of polymorphism?",
+        "options": [
+            "It allows the programmer to think at a more abstract level",
+            "There is less program code to write",
+            "The program will have a more elegant design and will be easier to maintain and update",
+            "Program code takes up less space"
+        ],
+        "explanation": "Explanation: Polymorphism allows for the implementation of elegant software.",
+        "correct": 3,
+        "difficulty": 0.15660361242752252,
+        "index": 66
+    },
+    {
+        "question": "Which one of the following has the same precedence level?",
+        "options": [
+            "Addition and Subtraction",
+            "Multiplication, Division and Addition",
+            "Multiplication, Division, Addition and Subtraction",
+            "Addition and Multiplication"
+        ],
+        "explanation": "Explanation: 'Addition and Subtraction' are at the same precedence level. Similarly, 'Multiplication and Division' are at the same precedence level. However, Multiplication and Division operators are at a higher precedence level than Addition and Subtraction operators.",
+        "correct": 1,
+        "difficulty": 0.16797579234654414,
+        "index": 67
+    },
+    {
+        "question": "What is the type of inf?",
+        "options": [
+            "Boolean",
+            "Integer",
+            "Float",
+            "Complex"
+        ],
+        "explanation": "Explanation: Infinity is a special case of floating point numbers. It can be obtained by float('inf').",
+        "correct": 3,
+        "difficulty": 0.18591440178666074,
+        "index": 68
+    },
+    {
+        "question": "Which of the following commands will create a list?",
+        "options": [
+            "list1 = list()",
+            "list1 = []",
+            "list1 = list([1, 2, 3])",
+            "all of the mentioned"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify",
+        "correct": 4,
+        "difficulty": 0.20868009178539149,
+        "index": 69
+    },
+    {
+        "question": "Suppose list1 is [2, 33, 222, 14, 25], What is list1[:-1]?",
+        "options": [
+            "[2, 33, 222, 14]",
+            "Error",
+            "25",
+            "[25, 14, 222, 33, 2]"
+        ],
+        "explanation": "Explanation: Execute in the shell to verify.",
+        "correct": 1,
+        "difficulty": 0.28847703148097104,
+        "index": 70
+    },
+    {
+        "question": "Only problems that are recursively defined can be solved using recursion.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "explanation": "Explanation: There are many other problems can also be solved using recursion.",
+        "correct": 2,
+        "difficulty": 0.3032148703809012,
+        "index": 71
+    },
+    {
+        "question": "Which of the following is not an advantage of using modules?",
+        "options": [
+            "Provides a means of reuse of program code",
+            "Provides a means of dividing up tasks",
+            "Provides a means of reducing the size of the program",
+            "Provides a means of testing individual parts of the program"
+        ],
+        "explanation": "Explanation: The total size of the program remains the same regardless of whether modules are used or not. Modules simply divide the program.",
+        "correct": 3,
+        "difficulty": 0.34671690520167786,
+        "index": 72
+    },
+    {
+        "question": "Which of the following is the same as math.exp(p)?",
+        "options": [
+            "e ** p",
+            "math.e ** p",
+            "p ** e",
+            "p ** math.e"
+        ],
+        "explanation": "Explanation: math.e is the constant defined in the math module.",
+        "correct": 2,
+        "difficulty": 0.44626085401379356,
+        "index": 73
+    },
+    {
+        "question": "What the does random.seed(3) return?",
+        "options": [
+            "True",
+            "None",
+            "3",
+            "1"
+        ],
+        "explanation": "Explanation: The function random.seed() always returns a None.",
+        "correct": 2,
+        "difficulty": 0.45531806314348877,
+        "index": 74
+    },
+    {
+        "question": "Which of the following can be used to create a directory?",
+        "options": [
+            "os.mkdir()",
+            "os.creat_dir()",
+            "os.create_dir()",
+            "os.make_dir()"
+        ],
+        "explanation": "Explanation: The function mkdir() creates a directory in the path specified.",
+        "correct": 1,
+        "difficulty": 0.48877984037446387,
+        "index": 75
+    },
+    {
+        "question": "Which module in Python supports regular expressions?",
+        "options": [
+            "re",
+            "regex",
+            "pyregex",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: re is a part of the standard library and can be imported using: import re.",
+        "correct": 1,
+        "difficulty": 0.6008951554873043,
+        "index": 76
+    },
+    {
+        "question": "What does the function re.match do?",
+        "options": [
+            "matches a pattern at the start of the string",
+            "matches a pattern at any position in the string",
+            "such a function does not exist",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: It will look for the pattern at the beginning and return None if it isn't found.",
+        "correct": 1,
+        "difficulty": 0.6848761111498791,
+        "index": 77
+    },
+    {
+        "question": "To open a file c:\\scores.txt for appending data, we use ____________",
+        "options": [
+            "outfile = open('c:\\\\scores.txt', 'a')",
+            "outfile = open('c:\\\\scores.txt', 'rw')",
+            "outfile = open(file = 'c:\\scores.txt', 'w')",
+            "outfile = open(file = 'c:\\\\scores.txt', 'w')"
+        ],
+        "explanation": "Explanation: a is used to indicate that data is to be appended.",
+        "correct": 1,
+        "difficulty": 0.8311976436830992,
+        "index": 78
+    },
+    {
+        "question": "Why are local variable names beginning with an underscore discouraged?",
+        "options": [
+            "they are used to indicate a private variables of a class",
+            "they confuse the interpreter",
+            "they are used to indicate global variables",
+            "they slow down execution"
+        ],
+        "explanation": "Explanation: As Python has no concept of private variables, leading underscores are used to indicate variables that must not be accessed from outside the class.",
+        "correct": 1,
+        "difficulty": 0.8900739881772561,
+        "index": 79
+    },
+    {
+        "question": "Python supports the creation of anonymous functions at runtime, using a construct called __________",
+        "options": [
+            "lambda",
+            "pi",
+            "anonymous",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.",
+        "correct": 1,
+        "difficulty": 0.9053822808844307,
+        "index": 80
+    },
+    {
+        "question": "What will be the output of print(math.copysign(3, -1))?",
+        "options": [
+            "1",
+            "1.0",
+            "-3",
+            "-3.0"
+        ],
+        "explanation": "Explanation: The copysign function returns a float whose absolute value is that of the first argument and the sign is that of the second argument.",
+        "correct": 4,
+        "difficulty": 0.912127379668394,
+        "index": 81
+    },
+    {
+        "question": "Which of the following cannot be returned by random.randrange(4)?",
+        "options": [
+            "0",
+            "3",
+            "2.3",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Only integers can be returned.",
+        "correct": 3,
+        "difficulty": 0.9497972297685839,
+        "index": 82
+    },
+    {
+        "question": "The function random.randint(4) can return only one of the following values. Which?",
+        "options": [
+            "4",
+            "3.4",
+            "error",
+            "5"
+        ],
+        "explanation": "Explanation: Error, the function takes two arguments.",
+        "correct": 3,
+        "difficulty": 1.037856735677419,
+        "index": 83
+    },
+    {
+        "question": "How do you delete a file?",
+        "options": [
+            "del(fp)",
+            "fp.delete()",
+            "os.remove('file')",
+            "os.delete('file')"
+        ],
+        "explanation": "Explanation: os.remove() is used to delete files.",
+        "correct": 3,
+        "difficulty": 1.2196585341514936,
+        "index": 84
+    },
+    {
+        "question": "Which of the following is an invalid statement?",
+        "options": [
+            "abc = 1,000,000",
+            "a b c = 1000 2000 3000",
+            "a,b,c = 1000, 2000, 3000",
+            "a_b_c = 1,000,000"
+        ],
+        "explanation": "Explanation: Spaces are not allowed in variable names.",
+        "correct": 2,
+        "difficulty": 1.2673192693043056,
+        "index": 85
+    },
+    {
+        "question": "Mathematical operations can be performed on a string.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "explanation": "Explanation: You can't perform mathematical operation on string even if the string is in the form: '1234\u00e2\u20ac\u00a6'.",
+        "correct": 2,
+        "difficulty": 1.3407101288029857,
+        "index": 86
+    },
+    {
+        "question": "What is the output of print 0.1 + 0.2 == 0.3?",
+        "options": [
+            "True",
+            "False",
+            "Machine dependent",
+            "Error"
+        ],
+        "explanation": "Explanation: Neither of 0.1, 0.2 and 0.3 can be represented accurately in binary. The round off errors from 0.1 and 0.2 accumulate and hence there is a difference of 5.5511e-17 between (0.1 + 0.2) and 0.3.",
+        "correct": 2,
+        "difficulty": 1.4037703765350447,
+        "index": 87
+    },
+    {
+        "question": "What is the default base used when math.log(x) is found?",
+        "options": [
+            "e",
+            "10",
+            "2",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: The natural log of x is returned by default.",
+        "correct": 1,
+        "difficulty": 1.4286400416838259,
+        "index": 88
+    },
+    {
+        "question": "What is the range of values that random.random() can return?",
+        "options": [
+            "[0.0, 1.0]",
+            "(0.0, 1.0]",
+            "(0.0, 1.0)",
+            "[0.0, 1.0)"
+        ],
+        "explanation": "Explanation: Any number that is greater than or equal to 0.0 and lesser than 1.0 can be returned.",
+        "correct": 4,
+        "difficulty": 1.4352091064118877,
+        "index": 89
+    },
+    {
+        "question": "Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard?",
+        "options": [
+            "Raw_input & Input",
+            "Input & Scan",
+            "Scan & Scanner",
+            "Scanner"
+        ],
+        "explanation": "Explanation: Python provides two built-in functions to read a line of text from standard input, which by default comes from the keyboard. These functions are:\nraw_input and input",
+        "correct": 1,
+        "difficulty": 1.5104977585147399,
+        "index": 90
+    },
+    {
+        "question": "What does the function re.search do?",
+        "options": [
+            "matches a pattern at the start of the string",
+            "matches a pattern at any position in the string",
+            "such a function does not exist",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: It will look for the pattern at any position in the string.",
+        "correct": 2,
+        "difficulty": 1.5138515691493186,
+        "index": 91
+    },
+    {
+        "question": "Which of the following statements regarding the output of the function re.match is incorrect?",
+        "options": [
+            "'pq*' will match 'pq'",
+            "'pq?' matches 'p'",
+            "'p{4}, q' does not match 'pppq'",
+            "'pq+' matches 'p'"
+        ],
+        "explanation": "Explanation: All of the above statements are correct except that 'pq+' match 'p'. 'pq+' will match 'p' followed by any non-zero number of q's, but it will not match 'p'.",
+        "correct": 4,
+        "difficulty": 1.5365537562260476,
+        "index": 92
+    },
+    {
+        "question": "To read the entire remaining contents of the file as a string from a file object infile, we use ____________",
+        "options": [
+            "infile.read(2)",
+            "infile.read()",
+            "infile.readline()",
+            "infile.readlines()"
+        ],
+        "explanation": "Explanation: read function is used to read all the lines in a file.",
+        "correct": 2,
+        "difficulty": 1.5643087632430275,
+        "index": 93
+    },
+    {
+        "question": "Which function is used to write a list of string in a file?",
+        "options": [
+            "writeline()",
+            "writelines()",
+            "writestatement()",
+            "writefullline()"
+        ],
+        "explanation": "Explanation: With the writeline function you can write a list of strings to a file\nfh = open('hello.txt', 'w')\nlines_of_text = ['a line of text', 'another line of text', 'a third line']\nfh.writelines(lines_of_text).",
+        "correct": 1,
+        "difficulty": 1.6109242294881074,
+        "index": 94
+    },
+    {
+        "question": "Which of the following statements is wrong about inheritance?",
+        "options": [
+            "Protected members of a class can be inherited",
+            "The inheriting class is called a subclass",
+            "Private members of a class can be inherited and accessed",
+            "Inheritance is one of the features of OOP"
+        ],
+        "explanation": "Explanation: Any changes made to the private members of the class in the subclass aren't reflected in the original members.",
+        "correct": 3,
+        "difficulty": 1.6214276528644511,
+        "index": 95
+    },
+    {
+        "question": "Which of these about a set is not true?",
+        "options": [
+            "Mutable data type",
+            "Allows duplicate values",
+            "Data type with unordered values",
+            "Immutable data type"
+        ],
+        "explanation": "Explanation: A set is a mutable data type with non-duplicate, unordered values, providing the usual mathematical set operations.",
+        "correct": 4,
+        "difficulty": 1.8192639811961753,
+        "index": 96
+    },
+    {
+        "question": "Which of the following is not the correct syntax for creating a set?",
+        "options": [
+            "set([[1,2],[3,4]])",
+            "set([1,2,2,3,4])",
+            "set((1,2,3,4))",
+            "{1,2,3,4}"
+        ],
+        "explanation": "Explanation: The argument given for the set must be an iterable.",
+        "correct": 1,
+        "difficulty": 1.9165775340238183,
+        "index": 97
+    },
+    {
+        "question": "Which of these about a dictionary is false?",
+        "options": [
+            "The values of a dictionary can be accessed using keys",
+            "The keys of a dictionary can be accessed using values",
+            "Dictionaries aren't ordered",
+            "Dictionaries are mutable"
+        ],
+        "explanation": "Explanation: The values of a dictionary can be accessed using keys but the keys of a dictionary can't be accessed using values.",
+        "correct": 2,
+        "difficulty": 2.0356008438954323,
+        "index": 98
+    },
+    {
+        "question": "How do you get the name of a file from a file object (fp)?",
+        "options": [
+            "fp.name",
+            "fp.file(name)",
+            "self.__name__(fp)",
+            "fp.__name__()"
+        ],
+        "explanation": "Explanation: name is an attribute of the file object.",
+        "correct": 1,
+        "difficulty": 2.1095337218689387,
+        "index": 99
+    },
+    {
+        "question": "Which of the following is true for variable names in Python?",
+        "options": [
+            "unlimited length",
+            "all private members must have leading and trailing underscores",
+            "underscore and ampersand are the only two special characters allowed",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: Variable names can be of any length.",
+        "correct": 1,
+        "difficulty": 2.1377082991583194,
+        "index": 100
+    },
+    {
+        "question": "What is the answer to this expression, 22 % 3 is?",
+        "options": [
+            "7",
+            "1",
+            "0",
+            "5"
+        ],
+        "explanation": "Explanation: Modulus operator gives the remainder. So, 22%3 gives the remainder, that is, 1.",
+        "correct": 2,
+        "difficulty": 2.1457386642699987,
+        "index": 101
+    },
+    {
+        "question": "Which one of the following has the highest precedence in the expression?",
+        "options": [
+            "Exponential",
+            "Addition",
+            "Multiplication",
+            "Parentheses"
+        ],
+        "explanation": "Explanation: Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same.",
+        "correct": 4,
+        "difficulty": 2.1578439730552335,
+        "index": 102
+    },
+    {
+        "question": "_____  is used to create an object.",
+        "options": [
+            "class",
+            "constructor",
+            "User-defined functions",
+            "In-built functions"
+        ],
+        "explanation": "Explanation: The values assigned by the constructor to the class members is used to create the object.",
+        "correct": 2,
+        "difficulty": 2.249873104940427,
+        "index": 103
+    },
+    {
+        "question": "Which of the following best describes polymorphism?",
+        "options": [
+            "Ability of a class to derive members of another class as a part of its own definition",
+            "Means of bundling instance variables and methods in order to restrict access to certain class members",
+            "Focuses on variables and passing of variables to functions",
+            "Allows for objects of different types and behaviour to be treated as the same general type"
+        ],
+        "explanation": "Explanation: Polymorphism is a feature of object-oriented programming languages. It allows for the implementation of elegant software that is well designed and easily modified.",
+        "correct": 4,
+        "difficulty": 2.327407213271945,
+        "index": 104
+    },
+    {
+        "question": "Which of these is not a fundamental features of OOP?",
+        "options": [
+            "Encapsulation",
+            "Inheritance",
+            "Instantiation",
+            "Polymorphism"
+        ],
+        "explanation": "Explanation: Instantiation simply refers to creation of an instance of class. It is not a fundamental feature of OOP.",
+        "correct": 3,
+        "difficulty": 2.350581187435548,
+        "index": 105
+    },
+    {
+        "question": "What is the data type of (1)?",
+        "options": [
+            "Tuple",
+            "Integer",
+            "List",
+            "Both tuple and integer"
+        ],
+        "explanation": "Explanation: A tuple of one element must be created as (1,).",
+        "correct": 2,
+        "difficulty": 2.402236243665449,
+        "index": 106
+    },
+    {
+        "question": "Which of the following creates a pattern object?",
+        "options": [
+            "re.create(str)",
+            "re.regex(str)",
+            "re.compile(str)",
+            "re.assemble(str)"
+        ],
+        "explanation": "Explanation: It converts a given string into a pattern object.",
+        "correct": 3,
+        "difficulty": 2.455716592685169,
+        "index": 107
+    },
+    {
+        "question": "What is the result of cmp(3, 1)?",
+        "options": [
+            "1",
+            "0",
+            "True",
+            "False"
+        ],
+        "explanation": "Explanation: cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y.",
+        "correct": 1,
+        "difficulty": 2.488935844786373,
+        "index": 108
+    },
+    {
+        "question": "Suppose there is a list such that: l=[2,3,4]. If we want to print this list in reverse order, which of the following methods should be used?",
+        "options": [
+            "reverse(l)",
+            "list(reverse[(l)])",
+            "reversed(l)",
+            "list(reversed(l))"
+        ],
+        "explanation": "Explanation: The built-in function reversed() can be used to reverse the elements of a list. This function accepts only an iterable as an argument. To print the output in the form of a list, we use: list(reversed(l)). The output will be: [4,3,2].",
+        "correct": 4,
+        "difficulty": 2.5105832551269573,
+        "index": 109
+    },
+    {
+        "question": "Which is the most appropriate definition for recursion?",
+        "options": [
+            "A function that calls itself",
+            "A function execution instance that calls another execution instance of the same function",
+            "A class method that calls another class method",
+            "An in-built method that is automatically called"
+        ],
+        "explanation": "Explanation: The appropriate definition for a recursive function is a function execution instance that calls another execution instance of the same function either directly or indirectly.",
+        "correct": 2,
+        "difficulty": 2.5751841987456086,
+        "index": 110
+    },
+    {
+        "question": "Which of the following is invalid?",
+        "options": [
+            "_a = 1",
+            "__a = 1",
+            "__str__ = 1",
+            "none of the mentioned"
+        ],
+        "explanation": "Explanation: All the statements will execute successfully but at the cost of reduced readability.",
+        "correct": 4,
+        "difficulty": 2.6101026465088033,
+        "index": 111
+    },
+    {
+        "question": "If a=(1,2,3,4), a[1:-1] is _________",
+        "options": [
+            "Error, tuple slicing doesn't exist",
+            "[2,3]",
+            "(2,3,4)",
+            "(2,3)"
+        ],
+        "explanation": "Explanation: Tuple slicing exists and a[1:-1] returns (2,3).",
+        "correct": 4,
+        "difficulty": 2.6188551490878256,
+        "index": 112
+    },
+    {
+        "question": "Which of these is false about recursion?",
+        "options": [
+            "Recursive function can be replaced by a non-recursive function",
+            "Recursive functions usually take more memory space than non-recursive function",
+            "Recursive functions run faster than non-recursive function",
+            "Recursion makes programs easier to understand"
+        ],
+        "explanation": "Explanation: The speed of a program using recursion is slower than the speed of its non-recursive equivalent.",
+        "correct": 3,
+        "difficulty": 2.6333466782538313,
+        "index": 113
+    },
+    {
+        "question": "Which function is used to read all the characters?",
+        "options": [
+            "Read()",
+            "Readcharacters()",
+            "Readall()",
+            "Readchar()"
+        ],
+        "explanation": "Explanation: The read function reads all characters fh = open('filename', 'r')\ncontent = fh.read().",
+        "correct": 1,
+        "difficulty": 2.660226784403367,
+        "index": 114
+    },
+    {
+        "question": "Which function is used to write all the characters?",
+        "options": [
+            "write()",
+            "writecharacters()",
+            "writeall()",
+            "writechar()"
+        ],
+        "explanation": "Explanation: To write a fixed sequence of characters to a file\nfh = open('hello.txt','w')\nwrite('Hello World').",
+        "correct": 1,
+        "difficulty": 2.6740835012273134,
+        "index": 115
+    },
+    {
+        "question": "To return the length of string s what command do we execute?",
+        "options": [
+            "s.__len__()",
+            "len(s)",
+            "size(s)",
+            "s.size()"
+        ],
+        "explanation": "Explanation: Execute in shell to verify.",
+        "correct": 1,
+        "difficulty": 2.7537809124954604,
+        "index": 116
+    },
+    {
+        "question": "What is output of print(math.pow(3, 2))?",
+        "options": [
+            "9",
+            "9.0",
+            "None",
+            "None of the mentioned"
+        ],
+        "explanation": "Explanation: math.pow() returns a floating point number.",
+        "correct": 2,
+        "difficulty": 2.866764184876251,
+        "index": 117
+    },
+    {
+        "question": "Which of the following is not a valid mode to open a file?",
+        "options": [
+            "ab",
+            "rw",
+            "r+",
+            "w+"
+        ],
+        "explanation": "Explanation: Use r+, w+ or a+ to perform both read and write operations using a single file object.",
+        "correct": 2,
+        "difficulty": 2.915491517700974,
+        "index": 118
+    },
+    {
+        "question": "Which of the following is equivalent to random.randint(3, 6)?",
+        "options": [
+            "random.choice([3, 6])",
+            "random.randrange(3, 6)",
+            "3 + random.randrange(3)",
+            "3 + random.randrange(4)"
+        ],
+        "explanation": "Explanation: random.randint(3, 6) can return any one of 3, 4, 5 and 6.",
+        "correct": 4,
+        "difficulty": 2.9174721134110584,
+        "index": 119
+    },
+    {
+        "question": "Which function is used to read single line from file?",
+        "options": [
+            "Readline()",
+            "Readlines()",
+            "Readstatement()",
+            "Readfullline()"
+        ],
+        "explanation": "Explanation: The readline function reads a single line from the file fh = open('filename', 'r')\ncontent = fh.readline().",
+        "correct": 2,
+        "difficulty": 2.937074508686324,
+        "index": 120
+    }
+]

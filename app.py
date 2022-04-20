@@ -27,13 +27,13 @@ client = MongoClient(MONGODB_URI)
 db = client['curate']
 
 pools = db['pools']
-quizzes = db['quizzes']
+quizzes = db['demo_quiz'] # quizzes | demo_quiz
 
 sample_questions = db['sample_questions']
 #qns = db['questions'] FOR LIVE DATA
 
 survey = db['survey']
-results = db['results']
+results = db['results'] # results || backup_master
 calibration_session_db = db['calibration_session']
 calibration_results = db['calibration_results']
 
@@ -191,59 +191,6 @@ def get_questions_by_id(collectionId):
     return dumps(currentQuestions)
 
 
-"""
-V1: Simple get with hardcoded DB collection
-"""
-""" @app.route("/get_questions", methods=['POST'])
-def get_questions():
-    '''
-    Return test/quiz list of questions
-        Parameters:
-            group: callback func to calculate either using maximum likelihood or bayesian
-            questions: list containing existing questions in JSON
-            responses: list containing responses in int format
-        Returns:
-            questions: updated list of questions
-    '''
-    body = request.get_json()
-    #print(body)
-
-    # Extract fields from request body
-    group = body['group']
-    currentQuestions = body['questions']
-    currentResponses = body['responses']
-
-    #TODO: Question selection for Group 1 (Random Selection)
-
-    # Selecting estimator
-    if group == 1:
-        estimator = standard_estimator
-    elif group == 2:
-        estimator = mle_estimator
-    else:
-        estimator = eap_estimator
-
-    # Calculate current estimate based on responses thus far
-    currentEstimate = getEstimate(estimator, currentQuestions, currentResponses)
-    print('currentEstimate: ' + currentEstimate)
-
-    # Item selection based on Maximum Fisher Information
-    if group == 1:
-        nextQuestion = getRandomQuestion(currentQuestions)
-    else:
-        nextQuestion = getQuestionByEstimate(currentQuestions, currentEstimate)
-
-    currentQuestions.append(nextQuestion)
-
-    # Dummy Data for testing
-    #data = {"correct": 4,"difficulty": -2.5492972826209277,"index": 1,"options": ["xzIjadaaaatB","6HchSbaaaaMSWeWaaaa","c0-nrdaaaaRkMGqcaaaa","RIreQcaaaa07dBHdaaa","KxO1hcaaaaOBNaMaaaa"],"question": "jaz3BdaaaaUm3iKdaaaaK30"}
-    #print(type(currentQuestions))
-    #print(type(data))
-    #currentList.append(data)
-
-    return dumps(currentQuestions) """
-    
-
 @app.route("/get_survey_questions", methods=['GET'])
 def get_survey_questions():
     surveyQn = survey.find();
@@ -266,16 +213,10 @@ def submit_adaptive_quiz():
 
     group = data['quiz']['estimator']
     questions = quiz_data['questions']
-    #rint("questions:")
-    #print(questions)
     responses = quiz_data['responses']
     logs = quiz_data['logs']
-    #print("logs:")
-    #print(logs)
 
     revisions = quiz_data['revisions']
-    #print("revisions:")
-    #print(revisions)
 
     if group == "STD":
         estimator = standard_estimator
@@ -456,58 +397,6 @@ def getRandomQuestionById(collectionId, currentQuestions):
     nextQn = qn_pool[random_index]
 
     return nextQn
-
-
-
-'''
-TODO: 
-1. Further validation, check adjacent values for a more accurate value
-2. Testing with dummy data
-3. Randomize across neighbors(?)
-'''
-""" def getQuestionByEstimate(currentQuestions, currentEstimate):
-    all_qns = list(sample_questions.find()) # for LIVE, change sample_questions to qns
-
-    currentEstimate = float(currentEstimate)
-    print("pre clone db")
-
-    # Clone DB & remove used indices
-    qn_pool = [x for x in all_qns if x not in currentQuestions]
-    print("post clone db")
-    print(type(qn_pool))
-
-    # Clone question into difficulty
-    difficulty_pool = list(map(lambda x:x['difficulty'], qn_pool))
-    print("post map difficulty")
-
-    # Perform binary search
-    lo = 0
-    hi = len(difficulty_pool)-1
-    res = -1
-
-    while lo <= hi:
-        mid = (lo+hi) // 2
-        
-        if difficulty_pool[mid] <= currentEstimate:
-            lo = mid+1
-        else:
-            hi = mid-1
-    
-    res = mid
-    nextQn = qn_pool[res]
-
-    return nextQn
-
-
-def getRandomQuestion(currentQuestions):
-    all_qns = list(sample_questions.find()) # for LIVE, change sample_questions to qns
-    qn_pool = [x for x in all_qns if x not in currentQuestions]
-
-    random_index = random.randint(0,len(qn_pool)-1)
-
-    nextQn = qn_pool[random_index]
-
-    return nextQn """
 
 def parseAllIds(qnList):
     for q in qnList:

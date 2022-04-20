@@ -1,7 +1,5 @@
 
 
-revisions = {'0': [{'index': 1, 'difficulty': -0.019091637692472574, 'action': 'SELECT_WRONG', 'selected': 3}, {'index': 1, 'difficulty': -0.019091637692472574, 'action': 'MODIFY_CORRECT', 'selected': 1}], '1': [{'index': 2, 'difficulty': -0.4443763450232776, 'action': 'SELECT_WRONG', 'selected': 3}, {'index': 2, 'difficulty': -0.4443763450232776, 'action': 'SELECT_CORRECT', 'selected': 1}], '2': [{'index': 3, 'difficulty': 0.6634606055268444, 'action': 'SELECT_CORRECT', 'selected': 2}, {'index': 3, 'difficulty': 0.6634606055268444, 'action': 'SELECT_WRONG', 'selected': 3}, {'index': 3, 'difficulty': 0.6634606055268444, 'action': 'MODIFY_CORRECT', 'selected': 2}], '3': [{'index': 4, 'difficulty': 0.3492572640078251, 'action': 'SELECT_WRONG', 'selected': 3}, {'index': 4, 'difficulty': 0.3492572640078251, 'action': 'MODIFY_CORRECT', 'selected': 4}], '4': [{'index': 5, 'difficulty': 0.6634606055268444, 'action': 'SELECT_WRONG', 'selected': 1}, {'index': 5, 'difficulty': 0.6634606055268444, 'action': 'SELECT_CORRECT', 'selected': 2}]}
-
 def process_revisions(revisions):
 
     total_questions = len(revisions)
@@ -78,5 +76,3 @@ def find_last_selection(seq):
             return lastSelection
     
     return lastSelection
-
-#process_revisions(revisions)
